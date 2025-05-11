@@ -1,0 +1,12 @@
+README.md
+LICENSE
+
+.my_env/
+Scripts/
+Include/
+Lib/
+share/
+pyvenv.cfg
+
+logs/
+logs2k/
