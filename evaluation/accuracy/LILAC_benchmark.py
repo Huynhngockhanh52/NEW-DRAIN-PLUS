@@ -10,7 +10,7 @@ from logparser.LILAC import LILAC
 from logparser.LILAC.utils_evaluate.evaluator_main import evaluator
 from logparser.LILAC.utils_evaluate.postprocess import post_average
 import evaluation.get_accuracy as func
-importlib.reload(func)
+# importlib.reload(func)
 
 SETTING_PARAMS = {
     "Apache": {
@@ -236,12 +236,20 @@ def main():
     
     for name_data, data_setting in SETTING_PARAMS.items():
         start_time = datetime.datetime.now()
-
+        param_dict={
+            # 'log_format': setting['log_format'], 'indir': indir, 'outdir': output_dir, 'rex': setting['regex'],
+            'log_format': data_setting['log_format'], 'indir': data_setting['input_dir'], 'outdir': output_dir + name_data + "/", 'rex': [],
+            'data_type': '2k', 'shot': 0, 'example_size': 0,
+            'model': "gpt-3.5-turbo", 'selection_method': "LILAC",
+        }
+        # parser = LILAC.LogParser(
+        #     log_format=data_setting['log_format'], 
+        #     indir=data_setting['input_dir'], outdir=output_dir + name_data + "/", 
+        #     data_type='2k', shot=0, example_size=0, model=model_name,
+        #     rex=[], selection_method="LILAC"
+        # )
         parser = LILAC.LogParser(
-            log_format=data_setting['log_format'], 
-            indir=data_setting['input_dir'], outdir=output_dir + name_data + "/", 
-            data_type='2k', shot=0, example_size=0, model=model_name,
-            rex=data_setting['regex'], selection_method="LILAC"
+            **param_dict
         )
         parse_time = parser.parse(data_setting['log_file'])
         parse_time = datetime.datetime.now() - start_time
