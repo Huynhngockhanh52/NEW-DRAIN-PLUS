@@ -8,5 +8,7 @@ Lib/
 share/
 pyvenv.cfg
 
-logs/
+logsfull/
 logs2k/
+Gzip_24/
+res/
