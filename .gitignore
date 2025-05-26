@@ -12,3 +12,6 @@ logsfull/
 logs2k/
 Gzip_24/
 res/
+
+__pycache__/
+.venv/
