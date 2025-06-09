@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import sys
+import re
 sys.path.append('../../')
 
 import importlib
@@ -264,6 +265,8 @@ def convert_data(data="2k"):
             for key in ['input_dir', 'log_file', 'log_template', 'log_structure']:
                 if key in setting:
                     setting[key] = setting[key].replace("2k", "full")
+            if 'log_structure' in setting:
+                setting['log_structure'] = re.sub(r'(_corrected|_rev)', '', setting['log_structure'])
 
 def main():
     result_file = os.path.join(benchmark_dir, benchmark_file)
