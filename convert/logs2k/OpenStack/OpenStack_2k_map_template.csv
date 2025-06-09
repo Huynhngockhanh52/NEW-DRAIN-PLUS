@@ -1,0 +1,6 @@
+OldEventId,OldTemplate,NewEventId,NewTemplate
+E24,"<*> ""DELETE <*>"" status: <*> len: <*> time: <*>",E24,"<*> ""DELETE <*> <*>"" status: <*> len: <*> time: <*>"
+E25,"<*> ""GET <*>"" status: <*> len: <*> time: <*>",E25,"<*> ""GET <*> <*>"" status: <*> len: <*> time: <*>"
+E26,"<*> ""POST <*>"" status: <*> len: <*> time: <*>",E26,"<*> ""POST <*> <*>"" status: <*> len: <*> time: <*>"
+E31,Creating event network-vif-plugged:<*>-<*>-<*>-<*>-<*> for instance <*>,E31,Creating event network-vif-plugged:<*> for instance <*>
+E30,Compute_service record updated for <*>,E30,Compute_service record updated for <*>:<*>

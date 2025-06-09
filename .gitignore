@@ -9,9 +9,11 @@ share/
 pyvenv.cfg
 
 logsfull/
-logs2k/
+logsplit/
+# logs2k/
+# benchmark/
 Gzip_24/
-res/
+# res/
 
 __pycache__/
 .venv/

@@ -1,0 +1,5 @@
+OldEventId,OldTemplate,NewEventId,NewTemplate
+E8,"<*> close, <*> <*>, <*> <*>, lifetime <*>",E8,"<*>:<*> close, <*> bytes sent, <*> bytes received, lifetime <*>"
+E8,"<*> close, <*> <*>, <*> <*>, lifetime <*>",E9,"<*>:<*> close, <*> bytes (<*>) sent, <*> bytes received, lifetime <*>"
+E8,"<*> close, <*> <*>, <*> <*>, lifetime <*>",E10,"<*>:<*> close, <*> bytes sent, <*> bytes (<*>) received, lifetime <*>"
+E8,"<*> close, <*> <*>, <*> <*>, lifetime <*>",E11,"<*>:<*> close, <*> bytes (<*>) sent, <*> bytes (<*>) received, lifetime <*>"
