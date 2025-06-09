@@ -11,9 +11,9 @@ pyvenv.cfg
 logsfull/
 logsplit/
 # logs2k/
-# benchmark/
+benchmark/
 Gzip_24/
-# res/
+res/
 
 __pycache__/
 .venv/
